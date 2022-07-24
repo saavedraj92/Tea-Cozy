@@ -45,6 +45,12 @@ header {
     height: 100%;
 }
 
+.links li a:hover {
+    background-color: bisque;
+    color: black;
+    text-decoration: none;
+}
+
 .links li a{
     color: seashell;
 }
