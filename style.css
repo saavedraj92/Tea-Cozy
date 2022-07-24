@@ -1,0 +1,161 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+body {
+    font-family: Helvetica;
+    font-size: 1.375rem;
+    color: seashell;
+    background-color: black;
+    opacity: .9;
+    text-align: center;
+    margin: 0;
+}
+
+/* Header/Navigation Bar */
+
+header {
+    max-height: 69px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    max-height: 50px;
+    padding-left: 10px;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    padding-right: 10px;
+    justify-content: end;
+    gap: 30px;
+    width: 65%;
+    font-size: 1.375rem;
+    align-items: center;
+    height: 100%;
+}
+
+.links li a{
+    color: seashell;
+}
+
+/* Mission Section */
+.mission-background {
+    background-image: url("./images/mission.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    max-width: 1200px;
+    max-height: 700px;
+    margin: 0 auto;
+
+}
+
+.mission {
+    width: 100%;
+    margin: auto;
+    background-color: black;
+
+}
+
+/* Tea of the Month */
+.promotion-text {
+    padding-top: 50px;
+    margin-bottom: -10px;
+}
+
+.featured-teas {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   max-width: 1000px;
+    padding-bottom: 50px;
+    justify-content: center;
+    margin-inline: auto;
+    
+}
+ 
+.featured-teas img{
+    height: 200px;
+    width: 300px;
+    margin: -10px -25px 10px -25px;
+}
+
+.locations-background {
+    min-height: 500px;
+    max-width: 1200px;
+    background-image: url('./images/location.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    
+}
+
+.locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.locations-background h2 {
+    margin-bottom: 15px;
+    padding-top: 80px;
+}
+
+.address {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px; 
+    margin-left: 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    opacity: 1;
+}
+
+
+.contact {
+    height: 200px;
+    line-height: 1.5;
+   }
+
+.contact h2 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+   
+.copyright {
+    float: left;
+    padding-left: 20px;
+}
+
+/* Adjusts the header to better fit a smaller screen */
+@media screen and (max-width: 560px) {
+    .links {
+        width: 60%;
+    }
+    .links li {
+        font-size: 1.1rem;
+        padding-left: 10px;
+        
+    }
+
+    .logo {
+        width: 30%;
+    }
+}
